@@ -1,33 +1,85 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>  <!-- la laibraire JQUERY -->
+    <script src="js/bootstrap.min.js" type="text/javascript" ></script>
+    <script src="js/form-jquery-validation.js" type="text/javascript" ></script>
+
+    <!-- la fonction datepicker se trouve dans la librairie jquery-ui -->
+        <script src=" https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript" type="text/javascript"  > </script> 
+    <!-- le CSS qui vient avec --> 
+        <link rel="stylesheet" href=" https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+
+
+            <meta charset="UTF-8">
+    <title>TP03</title>
+
+    <style>
+        .container{
+            background:gray;
+            padding:10px;
+            width:700px;
+        }
+    </style>
+</head>
+
+<body >
+  <center> <h1>Bienvenue</h1> </center>
+               
+    
+    <div class="container">
+         <form  BORDER ="2" style="background-color: peru" >
+          <table>
+          <div class="form-group row "> 
+                <label class="col-2 col-form-label" for="nom"> <strong>Nom</strong></label>
+                <input class=" col-5 form-control " type="text" id="nom" name="nom" > 
+            </div>
+            <div class="form-group row "> 
+                <label class="col-2 col-form-label" for="prenom"> <strong>Prénom</strong></label>
+                    <input class=" col-5 form-control" type="text" id="prenom" name="prenom"  > 
+            </div>
+            <div class="form-group row "> 
+                <label class="col-2 col-form-label" for="datepicker-wdt"> <strong>Date de naissance</strong></label>
+                    <input class=" col-5 form-control" type="text" id="datepicker-wdt" name="datepicker-wdt" placeholder="JJ/MM/AAAA" > 
+            </div>
+            <div class="form-group row "> 
+                <label class="col-2 col-form-label" for="adresse"><strong> Adresse</strong></label>
+                    <input class=" col-5 form-control" type="text" id="adresse" name="adresse"  > 
+            </div>
+            <div class="form-group row "> 
+                <label class="col-2 col-form-label" for="mail"><strong> Mail</strong></label>
+                    <input class=" col-5 form-control" type="text" id="mail" name="mail" placeholder="ex: abc@gmail.com" > 
+            </div>
+
+            <div class="row"> 
+            <label class="col-2 col-form-label" for="sub1"> </label>        
+             <button onclick="validation()" type="button" class="col-2 btn btn-primary" id="sub1" name="sub1"><strong>Envoyer</strong></button>
+             </div>  
+        </form>
+
+        <img src="image.jpg" height="100" width="100" />
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Corps de la modal à modifier après validation du formulaire</p>
+        <img src="" alt=""> </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
+ 
