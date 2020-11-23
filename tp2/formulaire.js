@@ -19,7 +19,7 @@ function validation(){
   }
 
   if(document.getElementById("error").innerHTML == ""){
-    document.getElementById("resultat").innerHTML = 'Bienvenue'+" "+document.querySelector("#nom").value;
+    document.getElementById("resultat").innerHTML = 'Bienvenue'+" "+document.querySelector("#prenom").value;
     document.getElementById("error").classList.remove("display")
   document.getElementById("resultat").classList.add("display")
   }
