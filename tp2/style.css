@@ -1,0 +1,28 @@
+h1{
+  border-radius: 0.5px;
+}
+label {
+    display:block ;
+    float:left;
+    width:100px ;
+    
+}
+
+#error, #resultat{
+  border : 1px solid red;
+  padding : 15px;
+  display : none;
+}
+
+#error{
+  background-color : pink;
+}
+
+#resultat{
+  border : 1px solid blue;
+  background-color : green;
+}
+
+.display{
+  display : block !important;
+}
