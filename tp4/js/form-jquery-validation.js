@@ -4,7 +4,7 @@ window.onload = function () {
    });
 
  document.querySelector("#firstname").addEventListener("keyup", function (event) {
-  document.getElementById("nameCounter").textContent = `${event.target.value.length} car.`;});
+  document.getElementById("nameCounteer").textContent = `${event.target.value.length} car.`;});
   
 
   document.querySelector("#gps").addEventListener("click", function (event) {
